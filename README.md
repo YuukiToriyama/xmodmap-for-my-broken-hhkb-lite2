@@ -18,3 +18,7 @@ Fnキーが効かない私のHHKB Lite2をなんとか使えるようにする�
 | ; | Left |
 | ' | Right |
 | / | Down |
+| k | Home |
+| l | Pg Up |
+| , | End |
+| . | Pg Down |
