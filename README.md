@@ -9,6 +9,24 @@ Fnキーが効かない私のHHKB Lite2をなんとか使えるようにする�
 - 「右SuperとFnキーをスワップすればいいのでは？」と考えたがうまく行かなかった
 	- **結論** 右SuperをFnキーに*見立て*、同時押しの設定を一つ一つ手動で行なう
 
+## Usage
+
+1. .Xmodmapファイルをホームディレクトリにコピー
+
+```bash
+git clone git@github.com:YUUKIToriyama/xmodmap-for-my-broken-hhkb-lite2.git
+cd xmodmap-for-my-broken-hhkb-lite2
+cp .Xmodmap ~/
+```
+
+ 2. OS起動時に設定ファイルが読み込まれるよう設定
+
+以下を`~/.xinputrc`に追記
+```
+if [ -f ~/.xmodmap ];then
+  xmodmap ~/.xmodmap
+fi
+```
 
 ## Key bindings
 
