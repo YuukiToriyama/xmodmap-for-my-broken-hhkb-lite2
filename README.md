@@ -19,13 +19,12 @@ cd xmodmap-for-my-broken-hhkb-lite2
 cp .Xmodmap ~/
 ```
 
- 2. OS起動時に設定ファイルが読み込まれるよう設定
+ 2. 起動時に設定ファイルが読み込まれるよう設定
 
-以下を`~/.xinputrc`に追記
+以下を`~/.bash_profile`に追記
 ```
-if [ -f ~/.xmodmap ];then
-  xmodmap ~/.xmodmap
-fi
+# Load xmodmap settings
+xmodmap ~/.Xmodmap
 ```
 
 ## Key bindings
